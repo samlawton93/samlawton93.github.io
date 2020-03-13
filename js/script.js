@@ -188,7 +188,7 @@ $(function(){
 				data: payload,
 				dataType: "json",
 				success: function() { $('#contact-form-result').html(alerts.success); },
-				error: function(response) { $('#contact-form-result').html(alerts.success + response.error); }
+				error: function() { $('#contact-form-result').html(alerts.success); }
 			});
 			// $('#contact-form').trigger('reset');
 		}
