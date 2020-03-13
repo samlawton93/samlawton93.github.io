@@ -160,7 +160,7 @@ $(function(){
 	=========================================================================*/
 	$('#contact-form').validator().on('submit', function (e) {
 		if (!e.isDefaultPrevented()) {
-			// e.preventDefault();
+			e.preventDefault();
 			var $this = $(this),
 				//You can edit alerts here
 				alerts = {
@@ -177,8 +177,20 @@ $(function(){
 						</div>\
 					</div>"
 				};
-			$('#contact-form-result').html(alerts.success);
-			$('#contact-form').trigger('reset');
+
+
+			var payload = {};
+			$this.serializeArray().map((field) => {payload[field.name] = field.value});
+
+			$ajax({
+				type: "POST",
+				url: $this.attr("action"),
+				data: payload,
+				dataType: "json",
+				success: function() { $('#contact-form-result').html(alerts.success); },
+				error: function(response) { $('#contact-form-result').html(alerts.success + response.error); }
+			});
+			// $('#contact-form').trigger('reset');
 		}
 	});
 
