@@ -182,7 +182,7 @@ $(function(){
 			var payload = {};
 			$this.serializeArray().map((field) => {payload[field.name] = field.value});
 
-			$ajax({
+			$.ajax({
 				type: "POST",
 				url: $this.attr("action"),
 				data: payload,
