@@ -160,7 +160,7 @@ $(function(){
 	=========================================================================*/
 	$('#contact-form').validator().on('submit', function (e) {
 		if (!e.isDefaultPrevented()) {
-			e.preventDefault();
+			// e.preventDefault();
 			var $this = $(this),
 				//You can edit alerts here
 				alerts = {
