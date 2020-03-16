@@ -43,24 +43,18 @@
                             <span>About</span>
                         </a>
                     </li>
-                    <!-- <li>
+                    <li>
                         <a href='#portfolio'>
                             <i class='icon-basic-case'></i>
                             <span>Portfolio</span>
                         </a>
-                    </li> -->
+                    </li>
                     <li>
                         <a href='#resume'>
                             <i class='icon-ecommerce-receipt'></i>
                             <span>Resume</span>
                         </a>
                     </li>
-                    <!-- <li>
-                        <a href='#blog'>
-                            <i class='icon-basic-book-pen'></i>
-                            <span>Blog</span>
-                        </a>
-                    </li> -->
                     <li>
                         <a href='#contact'>
                             <i class='icon-basic-mail'></i>
@@ -73,7 +67,7 @@
     </nav>
 
     <div id="main-wrapper">
-        <section id="home" class="section main-section active" data-bg="#3F51B5">
+        <section id="home" class="section main-section active" data-bg="#1eb2a6">
             <div class="container-fluid">
                 <div class="v-align">
                     <div class="inner">
@@ -106,8 +100,7 @@
                 </div>
             </div>
         </section>
-
-        <section id="about" class="section about-section" data-bg="#B2DFDB" data-color="dark">
+        <section id="about" class="section about-section" data-bg="#d4f8e8" data-color="dark">
             <div class="section-block about-block">
                 <div class="container-fluid">
                     <div class="section-header text-center">
@@ -122,10 +115,8 @@
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
                             <div class="about-text">
-                                <p>Lorem ipsum dolor sit amet, id electram reprimique his, dicta saepe oporteat eos an, esse erat doming at lam. Nec quodsi suscipiantur an, ad graece nemore ocurreret lam, agam ipsum meliore quo ut. Usu an vocent
-                                    malorum. Pro ne vitae graeco admodum, ignota imperdiet liberavisse cu mea. Sea probo saepe ocurreret ad, consul dicunt partiendo ei eum. Ei constituam theophrastus per, sea dolorum disputationi in, vel menandri
-                                    suavitate similique in. Vide assum conceptam eum et. Has postulant vulputate eu. Pro justo aliquando prodesset at, pri in causae utamur. Vim ei assum tacimates, oratio dolore legimus et eos, id his semper
-                                    omittantur. An per erant soleat accusam. lam te utroque molestiae, qui facilis pericula te. Vidit tractatos ei vel. Vix habeo ullum euripidis ne.</p>
+                                <p>Hi, my name is Sam Lawton. I'm a freelance web designer/developer based in Wigan. I specialize in front end web development, user experience and creating web designs. I currently work for Crown Oil as one of two
+                                    front end web developers. I've worked with companies of all shapes and sizes, so contact me if you'd like to work together on your next project.</p>
                             </div>
                         </div>
                     </div>
@@ -310,7 +301,74 @@
                 </div>
             </div>
         </section>
-        <section id="resume" class="section resume-section" data-bg="#E1BEE7" data-color="dark">
+        <section id="portfolio" class="section portfolio-section" data-bg="#ffa34d" data-color="dark">
+            <div class="container-fluid">
+                <div class="section-header text-center">
+                    <h2>My Portfolio</h2>
+                    <div class="divider">
+                        <img src="img/wave.png" alt="wave">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul class="portfolio-filters">
+                            <li><a href="#" data-group="all" class="active">All</a></li>
+                            <li><a href="#" data-group="work">Crown Oil</a></li>
+                            <li><a href="#" data-group="freelance">Freelance</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9">
+                        <ul class="portfolio-items">
+                            <li data-groups='["work"]'>
+                                <div class="inner">
+                                    <img src="img/1.png" alt="">
+                                    <div class="overlay">
+                                        <a href="#popup-1" class="has-popup view-project">View Project</a>
+                                        <div id='popup-1' class='popup-box zoom-anim-dialog mfp-hide'>
+											<figure>
+												<!--project popup image-->
+												<img src='img/1.png' alt>
+											</figure>
+											<div class='content'>
+												<!--project popup title-->
+												<h4>Crown Oil</h4>
+												<!--project popup description-->
+												<p>
+
+												</p>
+											</div>
+										</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-groups='["freelance"]'>
+                                <div class="inner">
+                                    <img src="img/2.png" alt="">
+                                    <div class="overlay">
+                                        <a href="#popup-2" class="has-popup view-project">View Project</a>
+                                        <div id='popup-2' class='popup-box zoom-anim-dialog mfp-hide'>
+											<figure>
+												<!--project popup image-->
+												<img src='img/2.png' alt>
+											</figure>
+											<div class='content'>
+												<!--project popup title-->
+												<h4>DC Building Renovations</h4>
+												<!--project popup description-->
+												<p>
+													
+												</p>
+											</div>
+										</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="resume" class="section resume-section" data-bg="#f67575" data-color="dark">
             <div class="section-block timeline-block">
                 <div class="container-fluid">
                     <div class="section-header text-center">
@@ -396,7 +454,11 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                            <div class="testimonials-slider">
+                                <div class="testimonial">
 
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -429,7 +491,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="text" name="yes" class="form-control" placeholder="Subject" required>
+                                <input type="text" name="subject" class="form-control" placeholder="Subject" required>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">

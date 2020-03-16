@@ -155,9 +155,6 @@ $(function(){
 
 	});
 
-	/*=========================================================================
-		Contact Form (NOT WORKING IN DEMO ONLY)
-	=========================================================================*/
 	$('#contact-form').validator().on('submit', function (e) {
 		if (!e.isDefaultPrevented()) {
 			e.preventDefault();
@@ -188,7 +185,7 @@ $(function(){
 				data: payload,
 				dataType: "json",
 				success: function() { $('#contact-form-result').html(alerts.success); },
-				error: function() { $('#contact-form-result').html(alerts.success); }
+				error: function() { $('#contact-form-result').html(alerts.error); }
 			});
 			// $('#contact-form').trigger('reset');
 		}
